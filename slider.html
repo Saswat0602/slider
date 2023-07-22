@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <style>
+        .main{
+            width: 70%;
+            height: 400px;
+            background-color: #a10ae7;
+            margin:auto;
+            margin-top: 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        .slide{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <img src="img5.jpg" class="slide" alt="">
+    <img src="img1.jpg" class="slide" alt="">
+    <img src="img2.jpg" class="slide" alt="">
+    <img src="img3.jpg" class="slide" alt="">
+    <img src="img4.jpg" class="slide" alt="">
+
+</div>
+<div>
+<button onclick="prev()"class="btn">prev</button>
+<button onclick="next()" class="btn">next</button>
+</div>
+
+<script src="slider.js"></script>
+    
+</body>
+</html>
